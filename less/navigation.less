@@ -1,1 +1,37 @@
 // Navigation Styles here
+ 
+    
+    nav {
+        border-bottom: 2px dashed @navigation-border;
+        width: 100%;
+        .flex-one();
+        padding-top: 10px;
+        align-items: center;
+        
+
+        h1 {
+            font-weight: bold;
+            padding: 10px;
+            margin-left: 170px;
+        }
+
+        .links {
+            .flex-two();
+            margin-right: 170px;
+
+            a {
+                text-decoration: none;
+                font-family: roboto;
+                font-size: 1.5rem;
+                padding: 10px;
+                color: @shark;
+                font-weight: bold;
+                
+                &:hover {
+
+                }
+                
+            }
+        }
+    }
+
