@@ -5,14 +5,19 @@
 }
 .flex-two {
   display: flex;
-  flex-flow: row no wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
+}
+.flex-three {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
 }
 .btn {
   background-color: #17A2B8;
   color: #FFFFFF;
-  font-weight: bold;
   font-size: 2rem;
+  curser: pointer;
   padding: 15px;
   width: 75%;
   border-radius: 15px;
@@ -195,6 +200,9 @@ nav {
   justify-content: space-between;
   padding-top: 10px;
   align-items: center;
+  /*    @media @tablet {
+           .flex-three();
+           } */
 }
 nav h1 {
   font-weight: bold;
@@ -203,7 +211,7 @@ nav h1 {
 }
 nav .links {
   display: flex;
-  flex-flow: row no wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin-right: 170px;
 }
@@ -238,6 +246,11 @@ nav .links a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .home .content-section {
+    margin: 50px;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -275,16 +288,35 @@ nav .links a {
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (min-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    width: 75%;
+  }
+}
 .home .content-pick .destination button {
   background-color: #17A2B8;
   color: #FFFFFF;
-  font-weight: bold;
   font-size: 2rem;
+  curser: pointer;
   padding: 15px;
   width: 75%;
   border-radius: 15px;
+}
+.home .content-pick .destination button:hover {
+  background-color: #006667;
 }

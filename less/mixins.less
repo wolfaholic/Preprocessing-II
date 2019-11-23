@@ -9,18 +9,26 @@
 
 .flex-two {
     display: flex;
-    flex-flow: row no wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     
+}
+
+.flex-three {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
 }
 
 .btn {
     background-color: @button-bg;
     color: @white;
-    font-weight: bold;
     font-size: 2rem;
+    curser: pointer;
     padding: 15px;
     width: 75%;
     border-radius: 15px;
 }
- 
+
+@tablet: ~"(min-width: 500px)";
+@desktop: ~"(max-width: 800px)";
