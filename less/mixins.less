@@ -1,1 +1,34 @@
 // Mixins in here
+
+.flex-one {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+
+.flex-two {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+}
+
+.flex-three {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.btn {
+    background-color: @button-bg;
+    color: @white;
+    font-size: 2rem;
+    curser: pointer;
+    padding: 15px;
+    width: 75%;
+    border-radius: 15px;
+}
+
+@tablet: ~"(min-width: 500px)";
+@desktop: ~"(max-width: 800px)";
